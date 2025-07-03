@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fff5f8, #ffe6ef);
+      font-family: 'Poppins', sans-serif;
+      color: #6b304a;
+    }
+
+    header {
+      background-color: #f78fb3;
+      padding: 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      border-bottom: 3px solid #ffcce0;
+      padding-bottom: 10px;
+    }
+
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: white;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      transition: 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: #ffe6f0;
+      text-shadow: 1px 1px 2px #d6336c;
+    }
+
+    .ribbon-top {
+      width: 80px;
+      margin: 15px auto 0;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: #d6336c;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .edu-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 6px 20px rgba(255, 182, 193, 0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .edu-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      background-color: #ffe9f0;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(245, 165, 190, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .edu-block:hover {
+      transform: translateY(-5px);
+      background-color: #ffe1ec;
+    }
+
+    .edu-block img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 173, 199, 0.4);
+    }
+
+    .edu-info {
+      flex: 1;
+    }
+
+    .edu-info h3 {
+      font-size: 20px;
+      color: #b93e6c;
+      margin-bottom: 10px;
+    }
+
+    .edu-info p {
+      font-size: 14px;
+      color: #6b304a;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #f78fb3;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .edu-block {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .edu-block img {
+        width: 100%;
+        height: auto;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <div class="logo">⋆. 𐙚 ˚Nick Zulaikha⋆. 𐙚 ˚</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li> 
+          <li><a href="family.html">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact_us.html">Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <img src="images/RIBEN.png" alt="Ribbon" class="ribbon-top" />
+
+  <main>
+    <h1>My Education</h1>
+
+    <div class="edu-section">
+
+      <div class="edu-block">
+        <img src="images/SKWB.png" alt="Primary School">
+        <div class="edu-info">
+          <h3>SK Wakaf Bharu (2011–2016)</h3>
+          <p>This is where my education journey began, filled with joyful memories and learning basics that shaped my future.</p>
+        </div>
+      </div>
+
+      <div class="edu-block">
+        <img src="images/MAHAAD MUHAMMADI PASIR PEKAN.JPG" alt="Secondary School">
+        <div class="edu-info">
+          <h3>Maahad Muhammadi Pasir Pekan (2017–2021)</h3>
+          <p>A time of spiritual and academic growth where I learned discipline, values, and developed leadership potential.</p>
+        </div>
+      </div>
+
+      <div class="edu-block">
+        <img src="images/UiTM MACHANG.png" alt="UiTM Machang">
+        <div class="edu-info">
+          <h3>UiTM Machang – Diploma (2022–2025)</h3>
+          <p>My first step into the world of Information Management — filled with new knowledge, friends, and experiences.</p>
+        </div>
+      </div>
+
+      <div class="edu-block">
+        <img src="images/UITM PUNCAK PERDANA.jpg" alt="UiTM Puncak Perdana">
+        <div class="edu-info">
+          <h3>UiTM Puncak Perdana – Degree (2025–Present)</h3>
+          <p>Currently continuing my degree journey in Information Management, aiming to grow professionally and personally.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+  
+  </footer>
+
+</body>
+</html>

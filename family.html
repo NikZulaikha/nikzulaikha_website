@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Family</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff5f8;
+      font-family: 'Poppins', sans-serif;
+      color: #a1426e;
+    }
+
+    header {
+      background-color: #f78fb3;
+      padding: 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      border-bottom: 3px solid #ffcce0;
+    }
+
+    .logo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 32px;
+      color: white;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: #ffe6f0;
+      text-shadow: 1px 1px 2px #d6336c;
+    }
+
+    .ribbon-top {
+      width: 80px;
+      margin: 10px auto 0;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: #d6336c;
+      margin-top: 30px;
+      animation: fadeIn 1s ease;
+    }
+
+    .divider {
+      width: 60px;
+      height: 4px;
+      background-color: #ffc2d1;
+      margin: 10px auto 30px;
+      border-radius: 10px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .gallery-section {
+      max-width: 1000px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid div {
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #9c3b67;
+      margin-top: 8px;
+      font-style: italic;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .btn-gallery {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 30px;
+      background-color: #f78fb3;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(247, 143, 179, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-gallery:hover {
+      background-color: #e4608e;
+      transform: scale(1.05);
+    }
+
+    .music-player-bawah {
+      text-align: center;
+      margin: 40px auto 0;
+    }
+
+    .music-player-bawah audio {
+      width: 250px;
+      border-radius: 20px;
+      background-color: #ffc2d1;
+      padding: 8px;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.5);
+    }
+
+    footer {
+      background-color: #f78fb3;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <div class="logo">⋆. 𐙚 ˚Nick Zulaikha⋆. 𐙚 ˚</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li> 
+          <li><a href="family.html">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact_us.html">Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <img src="images/RIBEN.png" alt="Ribbon" class="ribbon-top" />
+
+  <main>
+    <h1>My Family Moments</h1>
+    <div class="divider"></div>
+
+    <div class="gallery-section">
+      <div class="gallery-grid">
+        <div>
+          <img src="images/Raya2024.jpg" alt="Family Raya 2024">
+          <p class="caption">Family is not just an important thing, it’s everything</p>
+        </div>
+        <div>
+          <img src="images/raya2025.jpg" alt="Family Raya 2025">
+          <p class="caption">Every moment spent with them is a memory stitched in my heart</p>
+        </div>
+        <div>
+          <img src="images/raya20242.jpg" alt="Gathering 1">
+          <p class="caption">The older I get, the more I realize how important these moments are</p>
+        </div>
+        <div>
+          <img src="images/raya20253.jpg" alt="Gathering 2">
+          <p class="caption">Where love begins and never ends</p>
+        </div>
+      </div>
+
+      <div class="music-player-bawah">
+        <audio controls>
+          <source src="AUDIO2.mp3" type="audio/mp3">
+          
+        </audio>
+      </div>
+
+      <a href="gallery.html" class="btn-gallery">❀ View My Gallery ❀</a>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
